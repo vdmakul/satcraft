@@ -47,7 +47,8 @@ html, body {
 
 .main-page-lunarland-background {
 	background-color: #0585b0; /* fallback */
-	background-image: url(../images/main-page-lunarland.png), linear-gradient(to bottom, #1b003d 0%, #000 60%, #000 70%);
+	background-image: url(../images/main-page-lunarland.png), 
+			linear-gradient(to bottom, #1b003d 0%, #000 60%, #000 70%);
     background-repeat: no-repeat;, no-repeat;
     background-position: left bottom, 0;
     background-size: 100% 300px, cover;
@@ -75,3 +76,23 @@ html, body {
 }
 
 /* landing page */
+
+
+/* wizard page */
+
+.wizard-page-linear {
+  background: linear-gradient(to bottom, #09001a, #1f224f);
+}
+
+.card-in-wizard > a > .card {
+  margin: 10px 0;
+  background-color: #241e38;
+  color: white;
+}
+
+.card-in-wizard > a > .card:hover {
+  transform: scale(1.1);
+  transition: all 0.7s ease-out;
+}
+
+/* wizard page  */
