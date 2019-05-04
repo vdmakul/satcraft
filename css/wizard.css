@@ -5,3 +5,7 @@
 .button-step.collapsed {
     color: grey;
 }
+
+.option-label {
+    height: 50px;
+}
