@@ -86,6 +86,7 @@ html, body {
 
 .card-in-wizard > a > .card {
   margin: 10px 0;
+  /*padding: 10px 0;*/
   background-color: #241e38;
   color: white;
 }
