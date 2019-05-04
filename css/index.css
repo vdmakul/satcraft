@@ -39,4 +39,19 @@ html, body {
 	color: white;
 }
 
+.main-page-second-area {
+	background: linear-gradient(to bottom, rgba(64, 0, 128, 0.6), 60px, #400080 60px, #1b003d 100%);
+	margin-top: -60px;
+	color: white;
+}
+
+.main-page-lunarland-background {
+	background-color: #0585b0; /* fallback */
+	background-image: url(../images/main-page-lunarland.png), linear-gradient(to bottom, #1b003d 0%, #000 60%, #000 70%);
+    background-repeat: no-repeat;, no-repeat;
+    background-position: left bottom, 0;
+    background-size: 100% 300px, cover;
+    color: white;
+}
+
 /* landing page */
