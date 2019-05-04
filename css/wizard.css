@@ -9,3 +9,28 @@
 .option-label {
     height: 50px;
 }
+
+.relative-div {
+    position: relative;
+}
+
+.relative-div img{
+    max-height: 180px;
+    max-width: 270px;
+}
+
+.space-proven {
+    top: 80px;
+    right: 5px;
+    position: absolute;
+    color: black;
+    background-color: rgb(247, 208, 1);
+    font-size: 100%;
+}
+
+.verified-compatible {
+    top: 40px;
+    right: 5px;
+    position: absolute;
+    font-size: 100%;
+}
