@@ -1,48 +1,63 @@
 <h2>
-    Communication system
+  Communication system
 </h2>
 
 <span>
     A satellite that has no way of communication with earth is a pretty useless satellite, no different than space-junk. The choice of a COM subsystem depends on your power budget and what type of data you send and recieve from your satellite: if you only need to read a couple of sensor you dont need a very fast COM but if you want to send video from your satellite you need a fast COM subsystem.
 </span>
 
-<table class="table">
-    <tr>
-        <th>Manufacturer</th>
-        <th>Volume (cm3)</th>
-        <th>Weight (g)</th>
-        <th>Power cons. (W)</th>
-        <th>Price (eur)</th>
-        <th>Data rate (byte/s)</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>NSL EyeStar-S3 Simplex Globalstar Communication System</td>
-        <td>21.45</td>
-        <td>22</td>
-        <td>1.66</td>
-        <td>5529.14</td>
-        <td>9</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>NSL EyeStar-D2 Duplex Globalstar Communication System</td>
-        <td>159.698</td>
-        <td>138</td>
-        <td>2.2</td>
-        <td>7045.43</td>
-        <td>700</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>CPUT S-Band CubeSat Transmitter</td>
-        <td>129.6</td>
-        <td>100</td>
-        <td>5</td>
-        <td>20000</td>
-        <td>2000000</td>
-        <td></td>
-    </tr>
-</table>
+<br>
 
-<button type="button" class="btn btn-primary" onclick="goToStep(4)">Next</button>
+<table class="table table-hover">
+
+  <thead>
+  <tr>
+    <th></th>
+    <th>Product</th>
+    <th>Volume (cm3)</th>
+    <th>Weight (g)</th>
+    <th>Power cons. (W)</th>
+    <th>Price (eur)</th>
+    <th>Data rate (byte/s)</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      <button type="button" class="btn btn-dark" onclick="goToStep(4)">select</button>
+    </td>
+    <td>NSL EyeStar-S3 Simplex Globalstar Communication System</td>
+    <td>21.45</td>
+    <td>22</td>
+    <td>1.66</td>
+    <td>5529.14</td>
+    <td>9</td>
+    <td><img src="html/wizard/steps/img/com1.png" height="50%" width="*"/></td>
+  </tr>
+  <tr>
+    <td>
+      <button type="button" class="btn btn-dark" onclick="goToStep(4)">select</button>
+    </td>
+    <td>NSL EyeStar-D2 Duplex Globalstar Communication System</td>
+    <td>159.698</td>
+    <td>138</td>
+    <td>2.2</td>
+    <td>7045.43</td>
+    <td>700</td>
+    <td><img src="html/wizard/steps/img/com2.png" height="50%" width="*"/></td>
+  </tr>
+  <tr>
+    <td>
+      <button type="button" class="btn btn-dark" onclick="goToStep(4)">select</button>
+    </td>
+    <td>CPUT S-Band CubeSat Transmitter</td>
+    <td>129.6</td>
+    <td>100</td>
+    <td>5</td>
+    <td>20000</td>
+    <td>2000000</td>
+    <td><img src="html/wizard/steps/img/com3.png" height="40%" width="*"/></td>
+  </tr>
+  </tbody>
+</table>
