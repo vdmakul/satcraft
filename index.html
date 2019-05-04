@@ -5,31 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="dist/bootstrap-4.3.1/css/bootstrap.css">
+    <link rel="stylesheet" href="dist/bootstrap-4.3.1/css/bootstrap.min.css">
 
     <script src="dist/jquery-3.4.1.js"></script>
     <script src="dist/popper-1.15.0.js"></script>
-    <script src="dist/bootstrap-4.3.1/js/bootstrap.js"></script>
+    <script src="dist/bootstrap-4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Custom styles and js -->
     <script src="js/index.js"></script>
-    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
     <script>
 
     </script>
 </head>
-<body class="d-flex flex-column h-100">
+<body class="main-body">
+
 <header>
-    <div id="navbar" class="manually-loadable" data-html="html/navbar.html"></div>
+    <nav class="navbar navbar-expand-md navbar-dark position-absolute w-100">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <button class="btn btn-outline-primary mx-2">Sign in</button>
+        </form>
+      </div>
+    </nav>
 </header>
 
-<!-- Begin page content -->
-<main role="main" class="flex-shrink-0">
-    <div id="content" class="manually-loadable" data-html="html/landing/landing-content.html"></div>
+<main class="h-100">
+    <section class="container-fluid h-100 d-flex">
+        <div class="row">
+            <div class="col-md-8 d-flex flex-column justify-content-center align-self-center" style="color: white;">
+                <h1>Space is closer than you think</h1>
+                <p>Build your satelite right now!</p>
+                <hr>
+                <div>
+                    <a class="btn btn-warning" href="#">Build right now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid h-100 main-page-second-area">
+        <div class="row d-flex flex-row justify-content-around">
+            <div class="col-md-3 d-flex flex-column justify-content-center">
+                <div class="text-center">
+                    <h4>Design your satellite</h4>
+                </div>
+                <div class="text-center">
+                    <p>Online lego - just assemble your satellite from differenet pieces</p>
+                </div>
+                <div>
+                    <img class="img-fluid" src="images/main-assemble.jpg">
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <h4>Wait until it will be builded</h4>
+                <p>Check the status of satellite on the dashboard</p>
+            </div>
+            <div class="col-md-3">
+                <h4>Use the dashboard to know where the satellite is right now</h4>
+                <p>The dashboard have a lot of features that allows yout track your satellite</p>
+                <div>
+                    <img src="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid h-100">
+        <div class="row" style="background-color: yellow; opacity: 0.4">
+            <div class="col-md-10">
+                sasdasd
+            </div>
+        </div>
+    </section>
 </main>
 
-<footer class="footer mt-auto py-3">
-    <div id="footer" class="manually-loadable" data-html="html/footer.html"></div>
-</footer>
 </body>
 </html>
