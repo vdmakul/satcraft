@@ -9,7 +9,7 @@ $(function(){
 
 
 function goToStep(stepNo) {
-    $('#heading' + stepNo).find('button').click();
+    $('#heading' + stepNo).click();
     $("html, body").animate({ scrollTop: 0 });
     // $('.collapse').removeClass('active');
     updateProgresses(stepNo);
