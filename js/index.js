@@ -1,10 +1,13 @@
-function loadTemplate(elementSelector, htmlFile) {
-    $(elementSelector).load(htmlFile);
-}
-
 $(document).ready(function(){
-    loadTemplate("#navbar", "html/navbar.html");
-    loadTemplate("#footer", "html/footer.html");
-    // loadTemplate("#content", "html/landing/landing-content.html");
-    loadTemplate("#content", "html/wizard/wizard.html");
+    loadAll('body');
 });
+
+function loadAll(root) {
+    $(root).find('.manually-loadable').each(function() {
+        var htmlFile = $(this).data('html');
+        console.log('asdsad '+htmlFile );
+        if (htmlFile) {
+            $(this).load(htmlFile);
+        }
+    })
+}
