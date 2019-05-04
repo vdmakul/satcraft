@@ -1,11 +1,16 @@
 $(function(){
     loadAll('.container.wizard');
     $('.collapse').collapse();
+    window.setTimeout(function() {
+        $('#first-step').click();
+    }, 1000);
+
 });
 
 
 function goToStep(stepNo) {
     $('#heading' + stepNo).find('button').click();
+    $("html, body").animate({ scrollTop: 0 });
     // $('.collapse').removeClass('active');
     updateProgresses(stepNo);
 }
