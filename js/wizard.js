@@ -16,7 +16,7 @@ function goToStep(stepNo) {
 }
 
 
-var PROGRESSES = [[], [], [], [10, 10, 10], [10, 30, 10], [20, 30, 60], [50, 40, 110], [60, 60, 115], [70, 80, 120]];
+var PROGRESSES = [[], [], [], [5, 5, 3], [9, 22, 11], [18, 30, 34], [25, 44, 56], [33, 58, 71], [49, 74, 93]];
 
 function updateProgresses(stepNo) {
 
