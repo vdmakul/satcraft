@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>In-orbit dashboard</title>
-
-  <!-- Bootstrap core CSS -->
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
+
 <body class="d-flex flex-column h-100">
 <header>
   <div id="navbar" class="manually-loadable"></div>
@@ -15,11 +16,12 @@
 <!-- Begin page content -->
 <main role="main" class="flex-shrink-0">
   <div id="content" class="manually-loadable">
+
     <div class="row">
       <div class="col small">Latest image taken today: <a class="small">click here</a></div>
     </div>
-    <div class="row">
-      <div class="col-2">
+    <div class="row d-flex justify-content-center">
+<!--       <div class="col-2">
         <table class="table small">
           <tr>
             <td>operational since 2019-05-01</td>
@@ -71,17 +73,182 @@
             <td>satellite period: 618m</td>
           </tr>
         </table>
-      </div>
-      <div class="col-10">
+      </div> -->
+      <div class="col-8">
         <img src="html/in-orbit-dashboard/africa-15428_1920.jpg" width="100%">
-        <img style="position: relative; left:400px; top:-500px;" class="im" src="html/in-orbit-dashboard/generic-satellite.png" width="5%" height="5%">
+        <img style="position: relative; left: 300px; top:-400px;" class="im" src="html/in-orbit-dashboard/generic-satellite.png" width="5%" height="5%">
       </div>
     </div>
   </div>
 </main>
 
+<section class="container-fluid">
+  <div class="row d-flex justify-content-around">
+    <div class="col-md-2">
+      <div class="operate-page-tabs d-flex flex-column">
+        <button class="tablinks mt-0" onclick="openCity(event, 'FirstTab')" id="defaultOpen"><i class="fas fa-chart-pie"></i> Dashaboard</button>
+        <button class="tablinks" onclick="openCity(event, 'SecondTab')"><i class="fas fa-chart-bar"></i> Analytics</button>
+        <button class="tablinks" onclick="openCity(event, 'ThirdTab')"><i class="fas fa-sitemap"></i> Insights</button>
+        <button class="tablinks" onclick="openCity(event, 'FourthTab')"><i class="fas fa-unlock-alt"></i> Private data</button>
+        <button class="tablinks" onclick="openCity(event, 'FifthTab')"><i class="fas fa-cogs"></i> Settings</button>
+      </div>
+    </div>
+    <div class="col-md-9 d-flex flex-column">
+      <div id="FirstTab" class="tabcontent w-100 h-100">
+        <div class="col-md-12 mb-4">
+          <h3 style="color: #8a8a8a;">Life Time Value Overview</h3>
+          
+          <div class="col-md-12 d-flex justify-content-around">
+            <div class="d-flex flex-column">
+              <p class="m-0" style="color: #b3b3b3;">Impression</p>
+              <p class="m-0" style="font-size: 28px; color: #130226; font-weight: 600;">18,673</p>
+              <p class="m-0" style="color: green; font-size: 13px;">&#8593 81%</p>
+            </div>
+
+            <div class="d-flex flex-column">
+              <p class="m-0" style="color: #b3b3b3;">Clicks</p>
+              <p class="m-0" style="font-size: 28px; color: #130226; font-weight: 600;">5,608</p>
+              <p class="m-0" style="color: red; font-size: 13px;">&#8595 21%</p>
+            </div>
+
+            <div class="d-flex flex-column">
+              <p class="m-0" style="color: #b3b3b3;">Non-organic</p>
+              <p class="m-0" style="font-size: 28px; color: #130226; font-weight: 600;">1,821</p>
+              <p class="m-0" style="color: green; font-size: 13px;">&#8593 30%</p>
+            </div>
+
+            <div class="d-flex flex-column">
+              <p class="m-0" style="color: #b3b3b3;">Organic</p>
+              <p class="m-0" style="font-size: 28px; color: #130226; font-weight: 600;">2,345</p>
+              <p class="m-0" style="color: green; font-size: 13px;">&#8593 12%</p>
+            </div>
+
+            <div class="d-flex flex-column">
+              <p class="m-0" style="color: #b3b3b3;">CTR</p>
+              <p class="m-0" style="font-size: 28px; color: #130226; font-weight: 600;">54,52%</p>
+              <p class="m-0" style="color: green; font-size: 13px;">&#8593 68%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <h3 style="color: #8a8a8a;">Some very intelligent chart</h3>
+
+          <div class="col-md-12 d-flex justify-content-around">
+            <div class="col-md-3" style="background-color: lightgray;">
+              asdasd
+            </div>
+            
+            <div class="col-md-9" style="background-color: gray;">
+              asdsad
+            </div> 
+          </div>
+        </div>
+      </div>
+
+      <div id="SecondTab" class="tabcontent w-100 h-100">
+        <h3>A lot of useful information</h3>
+        <table class="table">
+          <tr>
+            <td>operational since 2019-05-01</td>
+          </tr>
+          <tr>
+            <td>norad id: 27368</td>
+          </tr>
+          <tr>
+            <td>local time: 09:39:45</td>
+          </tr>
+          <tr>
+            <td>utc: 06:39:45</td>
+          </tr>
+          <tr>
+            <td>latitude: 26.74</td>
+          </tr>
+          <tr>
+            <td>longitude: -136.12</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="ThirdTab" class="tabcontent w-100 h-100">
+        <h3>A lot of useful information too</h3>
+        <table class="table">
+          <tr>
+            <td>altitude [km]: 21819.79</td>
+          </tr>
+          <tr>
+            <td>altitude [mi]: 13558.19</td>
+          </tr>
+          <tr>
+            <td>speed [km/s]: 3.76</td>
+          </tr>
+          <tr>
+            <td>speed [mi/s]: 2.34</td>
+          </tr>
+          <tr>
+            <td>azimuth: 344.7 nnw</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="FourthTab" class="tabcontent w-100 h-100">
+        <h3>Information here</h3>
+        <p>a lot</p>
+        <table class="table">
+          <tr>
+            <td>elevation: -16.2</td>
+          </tr>
+          <tr>
+            <td>right ascension: 12h 13m 46s</td>
+          </tr>
+          <tr>
+          <tr>
+            <td>declination: 14° 26' 55''</td>
+          </tr>
+          <tr>
+            <td>the satellite is in day light</td>
+          </tr>
+          <tr>
+            <td>satellite period: 618m</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="FifthTab" class="tabcontent w-100 h-100">
+        <h3>Info here too</h3>
+        <p>a lot</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer class="footer mt-auto py-3">
   <div id="footer" class="manually-loadable"></div>
 </footer>
+
+<script type="text/javascript">
+  function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+
+</script>
 </body>
 </html>
