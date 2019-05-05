@@ -15,18 +15,39 @@
   <!-- Custom styles and js -->
   <script src="js/index.js"></script>
   <link href="css/index.css" rel="stylesheet">
+
+  <style>
+    .gantt {
+      font-size: smaller;
+      margin: 0;
+    }
+  </style>
   <script>
 
   </script>
 </head>
 
 <body>
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html">SatCraft</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link">Report for your configuration</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
+</header>
 
-<div class="container">
+<br>
+<div class="container pt-5">
 
   <div class="row">
-    <h1>Overall cost will be <span class="">37 679 eur</span> and it will take <span class="">7 months</span> to be ready for launch</h1>
+    <h1>Overall cost will be <span class="">37 679 eur</span> and it will take <span class="">9 months</span> to be ready for launch</h1>
   </div>
 
   <div class="row">
@@ -34,9 +55,10 @@
   </div>
 
   <div class="row">
-    <table class="table table-hover">
+    <table class="table table-hover table-sm">
       <thead>
       <tr>
+        <th>Type</th>
         <th>Product</th>
         <th>Volume (cm3)</th>
         <th>Weight (g)</th>
@@ -46,6 +68,7 @@
       </thead>
       <tbody>
       <tr>
+        <td>COM</td>
         <td>NSL EyeStar-S3 Simplex Globalstar Communication System</td>
         <td>21.45</td>
         <td>22</td>
@@ -55,6 +78,7 @@
       </tr>
 
       <tr>
+        <td>ADCS</td>
         <td>ISIS Magnetorquer board</td>
         <td>146.89</td>
         <td>196</td>
@@ -65,6 +89,7 @@
       </tr>
 
       <tr>
+        <td>CDHS</td>
         <td>Cube Computer</td>
         <td>86.4</td>
         <td>70</td>
@@ -75,6 +100,7 @@
       </tr>
 
       <tr>
+        <td>EPS</td>
         <td>Crystalspace P1U "Vasik" Power Supply</td>
         <td>105.408</td>
         <td>80</td>
@@ -85,10 +111,11 @@
       </tr>
 
       <tr>
+        <td>STR</td>
         <td>1U, the smallest possible cubesat size</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>1000</td>
+        <td>112</td>
+        <td>-</td>
         <td>1050</td>
       </tr>
 
@@ -97,6 +124,7 @@
       <tfoot>
       <tr>
         <td>Total</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -112,7 +140,7 @@
   </div>
 
   <div class="row">
-    <table class="table table-hover">
+    <table class="table table-hover table-sm">
       <thead>
       <tr>
         <th>Service</th>
@@ -153,6 +181,114 @@
     </table>
 
   </div>
+
+
+    <table>
+      <tr>
+        <td></td>
+        <td>+3 months</td>
+        <td>+6 months</td>
+        <td>+9 months</td>
+      </tr>
+
+      <tr>
+        <td>Stage</td>
+        <td></td>
+        <td><span class="badge">Ready to check</span></td>
+        <td><span class="badge">Launch</span></td>
+      </tr>
+
+
+
+      </tr>
+        <tr>
+            <td class="gantt">COM</td>
+            <td class="w-100" colspan="4">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 5%; background-color: #e9ecef" role="progressbar"></div>
+                    <div class="progress-bar" style="width: 25%" role="progressbar"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="gantt">ADCS</td>
+          <td class="w-100" colspan="4">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 10%; background-color: #e9ecef" role="progressbar"></div>
+                  <div class="progress-bar" style="width: 20%" role="progressbar"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="gantt">CDHS</td>
+          <td class="w-100" colspan="4">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 10%; background-color: #e9ecef" role="progressbar"></div>
+                  <div class="progress-bar" style="width: 25%" role="progressbar"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="gantt">EPS</td>
+            <td class="w-100" colspan="4">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 15%; background-color: #e9ecef" role="progressbar"></div>
+                  <div class="progress-bar" style="width: 20%" role="progressbar"></div>
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="gantt">STR</td>
+          <td class="w-100" colspan="4">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 10%; background-color: #e9ecef" role="progressbar"></div>
+                  <div class="progress-bar" style="width: 25%" role="progressbar"></div>
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="gantt">Assembling</td>
+          <td class="w-100" colspan="4">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 25%; background-color: #e9ecef" role="progressbar"></div>
+                    <div class="progress-bar" style="width: 30%" role="progressbar"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="gantt">Testing</td>
+            <td class="w-100" colspan="4">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 30%; background-color: #e9ecef" role="progressbar"></div>
+                  <div class="progress-bar" style="width: 20%" role="progressbar"></div>
+                  <div class="progress-bar" style="width: 15%;background-color: #e9ecef " role="progressbar"></div>
+                  <div class="progress-bar" style="width: 10%" role="progressbar"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="gantt">Validation</td>
+          <td class="w-100" colspan="4">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 50%; background-color: #e9ecef" role="progressbar"></div>
+                  <div class="progress-bar" style="width: 25%" role="progressbar"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="gantt">Launch windows</td>
+          <td class="w-100" colspan="4">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%; background-color: #e9ecef" role="progressbar"></div>
+                  <div class="progress-bar" style="width: 10%" role="progressbar"></div>
+                  <div class="progress-bar" style="width: 10%; background-color: #e9ecef" role="progressbar"></div>
+                  <div class="progress-bar" style="width: 10%" role="progressbar"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
 
 </div>
 
