@@ -97,3 +97,12 @@ html, body {
 }
 
 /* wizard page  */
+
+
+/* assemblance page */
+
+.assemblance-page-linear {
+  background: linear-gradient(to bottom, #161129, #3a005c);
+}
+
+/* assemblance page */
