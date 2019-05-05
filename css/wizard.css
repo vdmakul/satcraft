@@ -46,3 +46,21 @@
     position: absolute;
     font-size: 100%;
 }
+
+
+.card.narrow > .card-header {
+    height: 30px;
+    padding-top: 4px;
+}
+
+.card.narrow > .card-body {
+    padding: 10px 10px 10px 20px;
+}
+
+.card.narrow > .card-body input {
+    padding: 5px;
+}
+
+.card.narrow {
+    margin-bottom: 10px;
+}
